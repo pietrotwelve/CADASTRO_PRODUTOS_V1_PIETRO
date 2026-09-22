@@ -7,14 +7,14 @@
 
 body{
     font-family: Arial,sans-serif;
-    background-color: #f4f6f9;
-    color: #333;
+    background-color: #00b7ff1e;
+    color: #424242;
     padding: 20px;
 }
 
 .container{
     max-width: 650px;
-    background-color: #fff;
+    background-color: hsla(212, 100%, 89%, 0.644);
     margin: 30px auto;
     padding: 25px;
     border-radius: 8px;
@@ -24,7 +24,7 @@ body{
 h1{
     text-align: center;
     margin-bottom: 20px;
-    color: #1e293b;
+    color: #8aa9ff;
 }
 
 form{
@@ -77,12 +77,12 @@ button{
 }
 
 .btn-danger{
-    background-color: #dc2626;
+    background-color: #ff7d7d;
     color: white;
 }
 
 .btn-danger:hover{
-    background-color: #b91c1c;
+    background-color: #ff7474;
 }
 
 .resumo-container{
