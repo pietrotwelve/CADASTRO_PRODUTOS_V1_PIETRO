@@ -1,6 +1,3 @@
-
-script.txt
-100%
 //
 // FASE 1: Modelagem dos dados (Classe Base)
 //
