@@ -131,7 +131,7 @@ table{
 }
 
 th,td{
-    border: px solid #cbd5e1;
+    border: 1px solid #cbd5e1;
     padding: 10px;
     text-align: center;
 }
@@ -154,4 +154,16 @@ tbody tr:nth-child(even){
 
 .btn-remover:hover{
     background-color: #dc2626;
+}
+
+.btn-editar{
+    background-color: #3b82f6;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-right: 4px;
+}
+
+.btn-editar:hover{
+    background-color: #2563eb;
 }
