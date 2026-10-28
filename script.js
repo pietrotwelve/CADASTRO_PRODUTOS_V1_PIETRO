@@ -67,12 +67,10 @@ const btnSubmit = document.querySelector(".btn-primary");
 formProduto.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    // Sanitização: .trim() remove espaços no início e no fim
     const nome = document.getElementById("nome").value.trim();
     const preco = parseFloat(document.getElementById("preco").value);
     const quantidade = parseInt(document.getElementById("quantidade").value);
 
-    // Guard Clauses: interrompem a execução se algum dado for inválido
     if (!nome) {
         alert("Por favor, informe um nome válido para o produto.");
         return;
@@ -83,14 +81,11 @@ formProduto.addEventListener("submit", function (event) {
         return;
     }
 
-    // Dados válidos: cria o objeto
     const novoProduto = new Produto(nome, preco, quantidade);
 
     if (indiceEdicao === null) {
-        // MODO INCLUSÃO: adiciona ao final do array
         listaDeProdutos.push(novoProduto);
     } else {
-        // MODO EDIÇÃO: substitui o item na posição correspondente
         listaDeProdutos[indiceEdicao] = novoProduto;
     }
 
@@ -114,7 +109,7 @@ btnLimparTudo.addEventListener("click", function () {
         listaDeProdutos.length = 0;
         localStorage.removeItem(CHAVE_STORAGE);
 
-        // Se estava editando, o índice deixou de existir
+    
         sairDoModoEdicao();
         formProduto.reset();
 
