@@ -121,7 +121,6 @@ btnLimparTudo.addEventListener("click", function () {
 // FASE 5: Funções de Atualização e Renderização da Interface
 //
 
-// 🆕 Preenche o formulário com os dados do produto e ativa o Modo Edição
 function prepararEdicao(index) {
     const produto = listaDeProdutos[index];
 
@@ -135,7 +134,6 @@ function prepararEdicao(index) {
     btnSubmit.textContent = "Salvar Alterações";
 }
 
-// 🆕 Volta ao Modo Inclusão (indiceEdicao = null e texto original do botão)
 function sairDoModoEdicao() {
     indiceEdicao = null;
     btnSubmit.textContent = "Adicionar Produto";
@@ -184,7 +182,6 @@ function renderizarTabela() {
             </td>
         `;
 
-        // 🆕 Botão Editar chama prepararEdicao(index)
         const btnEditar = linha.querySelector(".btn-editar");
         btnEditar.addEventListener("click", () => prepararEdicao(index));
 
