@@ -89,6 +89,11 @@ modalBootstrapFechar.addEventListener("click", function() {
     modalBootstrap.style.display = "none";
 });
 
+document.getElementById("nome").addEventListener("input", function (event) {
+    inputBusca.value = event.target.value;
+    atualizarInterface();
+});
+
 formProduto.addEventListener("submit", function (event) {
     event.preventDefault();
     limparErroInline();
@@ -107,7 +112,7 @@ formProduto.addEventListener("submit", function (event) {
         return;
     }
 
-    const novoProduto = new Produto(nome, preco, quantity = quantidade);
+    const novoProduto = new Produto(nome, preco, quantidade);
 
     if (indiceEdicao === null) {
         listaDeProdutos.push(novoProduto);
